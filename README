@@ -1,0 +1,101 @@
+# 🌍 Magic Translator & Text-to-Speech App
+
+A web application that translates text into multiple languages and converts it to speech.
+
+## ✨ Features
+- Translate text into 11+ languages
+- Text-to-speech conversion with audio playback
+- Support for TXT, PDF, and DOCX files
+- Download audio files
+- User-friendly interface
+
+## 🛠️ Technologies Used
+- **Streamlit** - Web framework
+- **OpenAI GPT-3.5-turbo** - Translation
+- **Google Text-to-Speech (gTTS)** - Audio generation
+- **PyPDF2** - PDF processing
+- **python-docx** - Word document processing
+
+## 🚀 How to Use
+
+1. Enter text or upload a file (TXT, PDF, DOCX)
+2. Select your target language from the dropdown
+3. Click "Translate & Speak"
+4. Listen to the translation
+5. Download the audio file if needed
+
+## 💻 Local Setup
+
+### Prerequisites
+- Python 3.9 or higher
+- OpenAI API key
+
+### Installation Steps
+
+1. Clone this repository:
+```bash
+git clone https://github.com/YOUR-USERNAME/Magic_Translator_App.git
+cd Magic_Translator_App
+```
+
+2. Create virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Create `.streamlit/secrets.toml` file:
+```toml
+OPENAI_API_KEY = "your-openai-api-key-here"
+```
+
+5. Run the app:
+```bash
+streamlit run app.py
+```
+
+## 🌐 Live Demo
+[Coming soon - will be deployed on Streamlit Cloud]
+
+## 📚 Supported Languages
+- Spanish
+- French
+- German
+- Hindi
+- Japanese
+- Chinese (Simplified)
+- Arabic
+- Italian
+- Portuguese
+- Russian
+- Korean
+
+## 📋 Project Structure
+```
+Magic_Translator_App/
+├── app.py                  # Main application
+├── requirements.txt        # Python dependencies
+├── .gitignore             # Git ignore file
+├── .streamlit/
+│   └── secrets.toml       # API keys (not in repo)
+└── README.md              # This file
+```
+
+## 🔐 Security Note
+Never commit your `.streamlit/secrets.toml` file or API keys to GitHub!
+
+## 👨‍💻 Author
+[Your Name]
+
+## 📝 License
+This project is created as a capstone project for educational purposes.
+
+## 🙏 Acknowledgments
+- OpenAI for translation capabilities
+- Google for Text-to-Speech
+- Streamlit for the amazing framework
